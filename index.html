@@ -7,18 +7,22 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-900 text-white">
-    <header class="container mx-auto px-4 py-8">
-        <div class="flex items-center justify-center flex-col">
-            <img src="/api/placeholder/150/150" alt="Profile Picture" class="rounded-full w-32 h-32 mb-4">
-            <h1 class="text-4xl font-bold mb-2">Dennis Gera</h1>
-            <p class="text-gray-400 mb-4">Python Developer & Data Scientist</p>
+    <header class="relative">
+        <div class="h-64 bg-gradient-to-r from-blue-600 to-purple-600 relative overflow-hidden">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.2) 2px, transparent 0); background-size: 50px 50px;"></div>
+        </div>
+        <div class="container mx-auto px-4 relative -mt-16">
+            <div class="bg-gray-800 rounded-lg p-8 shadow-lg">
+                <h1 class="text-4xl font-bold mb-2">Dennis Gera</h1>
+                <p class="text-gray-400">Python Developer & Data Scientist</p>
+            </div>
         </div>
     </header>
 
     <main class="container mx-auto px-4 py-8">
-        <h2 class="text-2xl font-bold mb-6 text-center">Featured Projects</h2>
+        <h2 class="text-2xl font-bold mb-6">Featured Projects</h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Financial Data Pipeline -->
             <div class="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition duration-300">
                 <div class="flex items-center justify-between mb-4">
@@ -35,7 +39,7 @@
                     <h3 class="text-xl font-semibold text-blue-400">Stackr</h3>
                     <span class="bg-blue-600 text-sm px-2 py-1 rounded">Python</span>
                 </div>
-                <p class="text-gray-300 mb-4">A tool for managing and organizing your development stack.</p>
+                <p class="text-gray-300 mb-4">A tool for managing and organizing your inventory.</p>
                 <a href="https://github.com/dennisgera/stackr" class="text-blue-400 hover:text-blue-300">View Project →</a>
             </div>
 
